@@ -1,0 +1,23 @@
+{
+  "name": "graphical-elements",
+  "version": "1.0.0",
+  "description": "NodeJs, Express and ReactJs application to show the graphical elements to the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahbazalis/graphical-elements.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahbazalis/graphical-elements/issues"
+  },
+  "homepage": "https://github.com/shahbazalis/graphical-elements#readme",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
