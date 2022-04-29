@@ -4,6 +4,8 @@
   "description": "NodeJs, Express and ReactJs application to show the graphical elements to the user",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"cd back-end && npm start\" \"cd front-end && npm start\" ",
+    "dev": "concurrently \"cd back-end && npm run dev\" \"cd front-end && npm start\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
