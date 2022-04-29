@@ -1,0 +1,17 @@
+{
+  "rectangle_1": {
+    "x": 100,
+    "y": 100,
+    "width": 200,
+    "height": 40,
+    "color": "green",
+    "borderColor": "black"
+  },
+  "text_1": {
+    "x": 110,
+    "y": 110,
+    "text": "Hello, World!",
+    "fontSize": 20,
+    "color": "black"
+  }
+}
