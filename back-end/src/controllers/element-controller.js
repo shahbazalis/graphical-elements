@@ -1,4 +1,4 @@
-import jsonFileOperationsObj from "./jsonFileOp.js";
+import jsonFileOperationsObj from "./json-file-op.js";
 
 export const getGraphicalElement = async (req, res) => {
   try {

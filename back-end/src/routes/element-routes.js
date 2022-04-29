@@ -1,5 +1,5 @@
 import express from "express";
-import { getGraphicalElement } from "../controllers/elementController.js";
+import { getGraphicalElement } from "../controllers/element-controller.js";
 
 const router = express.Router();
 
