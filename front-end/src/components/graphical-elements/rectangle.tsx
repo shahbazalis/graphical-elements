@@ -1,48 +1,26 @@
-import { useEffect } from "react";
+import { RectangleObj } from "../../interfaces/RectangleObj";
+import GraphicalElementText from "./text";
 
-import { getGraphicalElements } from "../../api/graphical-elements-apis";
-
-export const RectangleText = () => {
-  return (
-    <p
-      style={{
-        position: "absolute",
-        left: "110px",
-        top: "110px",
-        color: "black",
-        fontSize: "20px",
-      }}
-    >
-      Hello, World!
-    </p>
-  );
-};
-const Rectangle = () => {
-  const graphicalElements = async () => {
-    try {
-      const elements = await getGraphicalElements();
-      console.log(elements);
-    } catch (err) {
-      console.log(err);
-    }
+interface RectangleShapeData {
+  data: RectangleObj;
+}
+const Rectangle = (props: RectangleShapeData) => {
+  let styleObject = {
+    left: props.data.rectangle.x + "px",
+    top: props.data.rectangle.y + "px",
+    width: props.data.rectangle.width + "px",
+    height: props.data.rectangle.height + "px",
+    backgroundColor: props.data.rectangle.color,
+    border: `2px solid ${props.data.rectangle.borderColor}`,
+    position: "absolute",
   };
 
-  useEffect(() => {
-    graphicalElements();
-  }, []);
   return (
     <div
-      style={{
-        position: "relative",
-        left: "100px",
-        top: "100px",
-        width: "200px",
-        height: "40px",
-        backgroundColor: "green",
-        border: "2px solid black",
-      }}
+      // @ts-ignore
+      style={styleObject}
     >
-      <RectangleText />
+      <GraphicalElementText textData={props.data.text} />
     </div>
   );
 };
