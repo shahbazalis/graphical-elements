@@ -6,6 +6,7 @@ import Square from "./square";
 const GraphicalShapes = () => {
   // Other code such as selectors can use the imported `RootState` type
   const graphicalElements = useAppSelector((state) => state.elements.value);
+  console.log(graphicalElements);
   return (
     <div>
       {graphicalElements.map((element, key) =>
