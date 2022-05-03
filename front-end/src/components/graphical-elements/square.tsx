@@ -13,7 +13,6 @@ const Square = (props: SquareShapeData) => {
     backgroundColor: props.data.square.color,
     border: `2px solid ${props.data.square.borderColor}`,
     position: "absolute",
-    content: "width=device-width, initial-scale=1.0",
   };
 
   return (

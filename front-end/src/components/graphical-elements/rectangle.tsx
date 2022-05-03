@@ -13,12 +13,11 @@ const Rectangle = (props: RectangleShapeData) => {
     backgroundColor: props.data.rectangle.color,
     border: `2px solid ${props.data.rectangle.borderColor}`,
     position: "absolute",
-    content: "width=device-width, initial-scale=1.0",
   };
 
   return (
     <div
-      data-testid="rectangle"
+      data-testid="login-btn"
       // @ts-ignore
       style={styleObject}
     >
